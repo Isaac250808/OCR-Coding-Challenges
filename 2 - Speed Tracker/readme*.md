@@ -1,4 +1,4 @@
-# **1 - Factorial Finder**
+# **2 - Speed Tracker**
 
 
 ## Planning:

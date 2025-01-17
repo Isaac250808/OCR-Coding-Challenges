@@ -1,4 +1,4 @@
-# **1 - Factorial Finder**
+# **3 - Thief**
 
 
 ## Planning:

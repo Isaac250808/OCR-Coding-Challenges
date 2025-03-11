@@ -1,0 +1,51 @@
+total = 0
+for i in lines:
+    if name.title() == i[0].title() and form == i[1]:
+        total+=1
+if total == 3:
+    temp = []
+    for i in range(len(lines)):
+        print(lines)
+        if lines[i][0].title() == name.title() and lines[i][1] == form:
+            temp.append(lines[i])
+    for i in range(3):
+        lines.remove(temp[i])
+    highest = 0
+    for i in range(3):
+        if int(temp[i][2]) > highest:
+            highest = int(temp[i][2])
+    temp2 = []
+    if int(temp[0][2]) == highest:
+        temp2.append(temp[0])
+        temp.remove(temp[0])
+    elif int(temp[1][2]) == highest:
+        temp2.append(temp[1])
+        temp.remove(temp[1])
+    else:
+        temp2.append(temp[2])
+        temp.remove(temp[2])
+    highest = 0
+    for i in range(2):
+        if int(temp[i][2]) > highest:
+            highest = int(temp[i][2])
+    if int(temp[0][2]) == highest:
+        temp2.append(temp[0])
+        temp.remove(temp[0])
+    else:
+        temp2.append(temp[1])
+        temp.remove(temp[1])
+    temp2.append(temp[0])
+    if score >= int(temp2[0][2]):
+        temp2.insert(0,[name,form,str(score)])
+    elif score >= int(temp2[1][2]):
+        temp2.insert(1,[name,form,str(score)])
+    elif score >= int(temp2[2][2]):
+        temp2.insert(2,[name,form,str(score)])
+    else:
+        temp2.append([name,form,str(score)])
+    lines.append(temp2[0])
+    lines.append(temp2[1])
+    lines.append(temp2[2])
+    print(temp2)
+    lines.sort(key=lambda x: x[0])
+    print(lines)

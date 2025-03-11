@@ -7,3 +7,4 @@ I need to:
 -   In the loop, keep a total, and times the total by a number, where each pass of the loop decreases the number by 1, until it is 0, then prints the total as the result
 ## Evaluation:
 I found it easy for the looped one, but for the recursion one, because we haven't learnt recursion fully at the time of this challenge, I found it harder, but they were both quite simple.
+Pseudocode: I found this one easy, as we have covered recursion in our class a while ago

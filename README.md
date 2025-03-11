@@ -13,3 +13,5 @@ There are different folders for different languages I tried these in. They are a
 For these languages, I used these IDEs:
 - Python - https://codewith.mu/ (simplistic, quick)
 - Psuedocode - https://pseudocode.pro/9618 (online IDE, worked better than one I found on VSCode)
+
+My explainations for how I did each challenge are only in the Python folder. The other folders are purely for code.
